@@ -26,11 +26,11 @@ def vig(message, key, enc=True):
 
 
 def vig_encode(message, key):
-    return "[" + vig(message, key, True) + "]"
+    return vig(message, key, True)
 
 
 def vig_decode(message, key):
-    return vig(message[1:-1], key, False)
+    return vig(message, key, False)
 
 
 def random_key(length):
