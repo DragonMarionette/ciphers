@@ -28,7 +28,7 @@ while True:
 # do encoding or decoding
 if encode:
     msg_encoded = shift_encode(my_msg, my_key)
-    print(f"\nEncoded message: {msg_encoded}")
+    print(f"\nEncoded message: [{msg_encoded}]")
 else:
-    msg_decoded = shift_decode(my_msg, my_key)
+    msg_decoded = shift_decode(my_msg[1:-1], my_key)
     print(f"\nDecoded message: {msg_decoded}")
