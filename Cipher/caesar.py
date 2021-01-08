@@ -9,8 +9,9 @@ def shift(message, key):
 
 
 def shift_encode(message, key):
-    return "[" + shift(message, key) + "]"
+    return shift(message, key)
 
 
 def shift_decode(message, key):
-    return shift(message[1:-1], -key)
+    return shift(message, -key)
+
