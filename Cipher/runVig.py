@@ -22,7 +22,7 @@ my_key = input("Input a key string: ")
 # do encoding or decoding
 if encode:
     msg_encoded = vig_encode(my_msg, my_key)
-    print(f"\nEncoded message: {msg_encoded}")
+    print(f"\nEncoded message: [{msg_encoded}]")
 else:
-    msg_decoded = vig_decode(my_msg, my_key)
+    msg_decoded = vig_decode(my_msg[1:-1], my_key)
     print(f"\nDecoded message: {msg_decoded}")
