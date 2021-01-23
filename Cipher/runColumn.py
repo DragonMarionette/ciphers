@@ -1,4 +1,4 @@
-from Cipher.column import *
+from column import *
 
 
 # get user intent: encode or decode?
