@@ -1,4 +1,4 @@
-from Cipher.caesar import *
+from caesar import *
 
 
 # get user intent: encode or decode?
