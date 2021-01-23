@@ -1,4 +1,4 @@
-from Cipher.vig import *
+from vig import *
 
 
 # get user intent: encode or decode?
